@@ -34,3 +34,23 @@ Analizar, diseñar y construir un prototipo funcional de incubadora neonatal a e
 - Diseñar y simular circuitos electrónicos que permitan el control de la temperatura mediante un sistema de lazo cerrado y la medición del peso utilizando sensores adecuados, aplicando conceptos de instrumentación biomédica.
   
 - Construir un modelo a escala que integre los sistemas diseñados, evaluando su funcionamiento y verificando su capacidad para mantener condiciones controladas similares a las de una incubadora neonatal real.
+
+# Materiales : 
+
+- Multímetro digital
+- Osciloscopio digital
+- Fuente de voltaje DC
+- Computador con internet
+- Software de simulación de circuitos
+- Protoboard
+- Cable UTP
+- Ventilador
+- Reguladores LM317 y LM337
+- Diodo 1N4007
+- Transformador 502
+- Fusible e interruptor
+- Puente rectificador
+- Termistor
+- LEDs (3 unidades)
+- Resistencias (1kΩ – 200kΩ)
+- Capacitores (2200 µF)
