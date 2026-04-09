@@ -63,6 +63,9 @@ En la primera etapa de la práctica, se realizó una revisión bibliográfica co
 
 Posteriormente, se procedió al diseño y simulación de un sistema de control de temperatura en lazo cerrado. Para ello, se empleó un termistor como sensor encargado de medir la temperatura interna, cuya señal fue utilizada como retroalimentación para el sistema de control. Este sistema compara continuamente la temperatura medida con un rango de referencia establecido entre 36°C y 37.5°C, activando o desactivando un elemento calefactor según sea necesario. Adicionalmente, se incorporó un sistema de señalización mediante LEDs, donde un LED verde indica que la temperatura se encuentra dentro del rango adecuado, mientras que LEDs rojos alertan cuando la temperatura está por encima o por debajo de dicho rango.
 
+<img width="1352" height="772" alt="image" src="https://github.com/user-attachments/assets/6e2f2b52-7ff2-43c7-a30d-1d4cebaa59b0" />
+
+
 Finalmente, en esta parte se diseñó y simuló un circuito para la medición del peso, utilizando un sensor de fuerza que permite detectar variaciones de carga. La señal obtenida fue acondicionada para su correcta interpretación y posteriormente visualizada mediante un sistema de salida, como una pantalla LCD o displays de 7 segmentos, permitiendo así el monitoreo del peso del neonato de forma continua.
 
 ## Parte B | Construcción del prototipo : 
@@ -80,3 +83,26 @@ Finalmente, se realizó una estimación del costo total del sistema desarrollado
 En la última etapa, se documentó todo el proceso desarrollado durante la práctica, describiendo de manera detallada cada uno de los pasos realizados en el diseño, simulación y construcción del sistema. Esta documentación se organizó siguiendo una estructura clara y coherente, facilitando su comprensión.
 
 Adicionalmente, se creó un repositorio en la plataforma GitHub donde se recopiló toda la información del proyecto, incluyendo descripciones, diseños, simulaciones y evidencia del prototipo. Este repositorio permitió mantener un registro ordenado del trabajo realizado y fomentar el trabajo colaborativo entre los integrantes del grupo.
+
+# Marco teórico : 
+
+Las incubadoras neonatales son dispositivos biomédicos fundamentales en el cuidado de recién nacidos, especialmente en aquellos que presentan condiciones de prematurez o bajo peso al nacer. Su función principal es proporcionar un entorno controlado que simule las condiciones del útero materno, garantizando parámetros fisiológicos adecuados para la supervivencia y el desarrollo del neonato. Entre las variables más importantes que deben ser reguladas se encuentran la temperatura, la humedad, la oxigenación y el flujo de aire (Tran et al., 2014).
+
+Uno de los aspectos más críticos en el funcionamiento de una incubadora neonatal es la termorregulación. Los recién nacidos, particularmente los prematuros, poseen una limitada capacidad para mantener su temperatura corporal debido a la inmadurez de su sistema nervioso y a la menor cantidad de tejido adiposo. Esto los hace altamente vulnerables tanto a la hipotermia como a la hipertermia, condiciones que pueden comprometer gravemente su estado de salud (Knobel-Dail, 2014). Por esta razón, las incubadoras deben mantener una temperatura estable alrededor de los 36°C a 37°C, rango considerado óptimo para el bienestar neonatal (EFCNI, 2018).
+
+Desde el punto de vista de la ingeniería, el control de la temperatura en una incubadora se realiza mediante sistemas de control en lazo cerrado. En este tipo de sistemas, un sensor mide continuamente la variable de interés (temperatura), y esta información es retroalimentada a un controlador que compara el valor medido con un valor de referencia. En función de esta comparación, el sistema ajusta la acción de un actuador, como una resistencia calefactora, para mantener la variable dentro del rango deseado (Ogata, 2010). Este principio es ampliamente utilizado en sistemas biomédicos donde se requiere alta precisión y estabilidad.
+
+<img width="582" height="386" alt="image" src="https://github.com/user-attachments/assets/5de38dff-e9ac-45fa-ac7f-124560dbb028" />
+
+
+Para la medición de la temperatura, es común el uso de sensores como los termistores, los cuales presentan una variación de resistencia en función de la temperatura. Estos dispositivos son ampliamente utilizados debido a su bajo costo, alta sensibilidad y facilidad de integración en circuitos electrónicos (Webster, 2010). La señal generada por el sensor debe ser acondicionada adecuadamente para su procesamiento, lo que implica etapas de amplificación, filtrado y conversión analógica-digital.
+
+Otro parámetro relevante en el monitoreo neonatal es el peso del recién nacido, el cual es un indicador clave del crecimiento y estado de salud. Para su medición se utilizan sensores de fuerza, como las galgas extensiométricas, que funcionan bajo el principio de deformación mecánica. Cuando se aplica una carga, el sensor experimenta una deformación que produce un cambio en su resistencia eléctrica, el cual puede ser medido y convertido en una señal proporcional al peso (Dally, Riley & McConnell, 1993).
+
+Adicionalmente, las incubadoras incorporan sistemas de visualización e indicadores, como pantallas LCD o displays de 7 segmentos, que permiten mostrar información relevante al personal médico. También incluyen sistemas de alarma visual y auditiva que alertan cuando alguna variable se encuentra fuera de los rangos seguros, garantizando una respuesta rápida ante posibles fallos (Webster, 2010).
+
+Desde una perspectiva más amplia, el desarrollo de incubadoras de bajo costo ha sido un tema de gran interés en la ingeniería biomédica, especialmente en países en desarrollo, donde el acceso a equipos médicos avanzados es limitado. Investigaciones han demostrado que es posible diseñar incubadoras funcionales con costos significativamente reducidos, manteniendo niveles aceptables de desempeño y seguridad (Tran et al., 2014).
+
+<img width="466" height="466" alt="image" src="https://github.com/user-attachments/assets/264b25da-45c7-41fe-bd02-c3a78002d672" />
+
+En conclusión, el diseño de una incubadora neonatal involucra la integración de conocimientos de electrónica, control automático y fisiología humana, permitiendo el desarrollo de sistemas capaces de garantizar condiciones óptimas para la vida neonatal. Este tipo de prácticas fortalece la comprensión de los estudiantes sobre la aplicación real de la instrumentación biomédica en la solución de problemas clínicos.
