@@ -112,3 +112,44 @@ Desde una perspectiva más amplia, el desarrollo de incubadoras de bajo costo ha
 <img width="466" height="466" alt="image" src="https://github.com/user-attachments/assets/264b25da-45c7-41fe-bd02-c3a78002d672" />
 
 En conclusión, el diseño de una incubadora neonatal involucra la integración de conocimientos de electrónica, control automático y fisiología humana, permitiendo el desarrollo de sistemas capaces de garantizar condiciones óptimas para la vida neonatal. Este tipo de prácticas fortalece la comprensión de los estudiantes sobre la aplicación real de la instrumentación biomédica en la solución de problemas clínicos.
+
+# Analísis : 
+
+El sistema desarrollado cumplió en gran medida con los objetivos planteados en la práctica, particularmente en lo relacionado con el control de temperatura dentro de la incubadora neonatal a escala. El uso de un sistema de calefacción mediante resistencia y ventilación permitió mantener condiciones cercanas al rango requerido (36 °C – 37,5 °C), lo cual es fundamental para la supervivencia y estabilidad fisiológica del neonato .
+
+El control térmico mostró un comportamiento adecuado, evidenciando que el sistema de lazo cerrado implementado respondió correctamente ante variaciones de temperatura, activando los elementos de calefacción cuando era necesario. Esto demuestra que el diseño electrónico y la lógica de control fueron efectivos para esta variable crítica.
+
+Por otro lado, el sistema de medición de peso presentó fallas importantes. Aunque el circuito basado en la galga extensiométrica (celda de carga) y el módulo HX711 funcionó de manera individual en pruebas iniciales, al integrarlo en la incubadora no logró estabilizar las mediciones. Se observó una oscilación significativa entre valores de aproximadamente 1 kg y 6 kg, lo cual indica:
+
+ - Falta de estabilidad mecánica en el montaje
+ - Posible ruido eléctrico en la señal
+ - Problemas de calibración o filtrado de datos
+
+Este comportamiento impide obtener mediciones confiables, lo cual es crítico en aplicaciones biomédicas donde la precisión es esencial.
+
+En términos generales, el sistema cumplió parcialmente con los requerimientos: el control de temperatura fue exitoso, pero la medición de peso no alcanzó el desempeño esperado.
+
+# Conclusiones : 
+
+El desarrollo de la incubadora neonatal a escala permitió evidenciar que es posible implementar un sistema funcional capaz de controlar variables críticas como la temperatura, cumpliendo con el objetivo principal de la práctica. El sistema térmico mostró un desempeño adecuado gracias a la implementación de un control en lazo cerrado, lo cual resalta la importancia del monitoreo continuo en dispositivos biomédicos. Sin embargo, el sistema de medición de peso no fue efectivo, ya que la galga extensiométrica no logró estabilizar las mediciones y presentó oscilaciones entre 1 kg y 6 kg, lo que impide su uso confiable. Esta limitación pone en evidencia la importancia del diseño mecánico y del acondicionamiento de señal en sistemas de medición. Finalmente, la práctica permitió comprender que, aunque es posible construir un prototipo funcional, el desarrollo de una incubadora neonatal real requiere altos estándares de precisión, seguridad y validación que van más allá del alcance de este modelo académico.
+
+# Preguntas para la discusión : 
+
+1. Además de la temperatura y el peso, existen otras variables críticas en el monitoreo neonatal que son fundamentales para garantizar la salud del recién nacido. Entre ellas se destacan la humedad, que es esencial para evitar la deshidratación, especialmente en neonatos prematuros; la saturación de oxígeno, que permite evaluar la eficiencia respiratoria; la frecuencia cardíaca, que es un indicador directo del estado fisiológico del neonato; y la frecuencia respiratoria, que ayuda a detectar posibles alteraciones pulmonares. Asimismo, el control del flujo de aire es importante para asegurar una distribución homogénea de la temperatura dentro de la incubadora. Estas variables son relevantes debido a la inmadurez de los sistemas fisiológicos en los neonatos, lo que los hace altamente vulnerables a cambios en el entorno.
+
+2. Para convertir el sistema desarrollado en una incubadora neonatal real, sería necesario incorporar múltiples mejoras tanto a nivel técnico como normativo. En primer lugar, se requeriría el uso de sensores de grado médico con alta precisión y confiabilidad. Además, sería indispensable implementar sistemas de seguridad redundantes, como alarmas ante fallos o condiciones fuera de rango. También se debería mejorar el sistema de control, por ejemplo, mediante controladores PID más robustos. Adicionalmente, sería necesario incluir el control de variables como la humedad y la concentración de oxígeno, así como utilizar materiales biocompatibles y fáciles de esterilizar. Finalmente, el sistema debería cumplir con normativas y certificaciones médicas internacionales para su uso en entornos clínicos. Por lo tanto, aunque el prototipo desarrollado es funcional a nivel académico, aún está lejos de cumplir con los estándares requeridos en aplicaciones reales.
+
+3. En cuanto a las semejanzas entre una incubadora neonatal y una servo-cuna, ambas tienen como objetivo principal mantener una temperatura adecuada para el neonato mediante sistemas de monitoreo continuo y control térmico. Las dos utilizan sensores para medir la temperatura y pueden operar bajo esquemas de control en lazo cerrado. Sin embargo, la principal diferencia radica en su forma de transferencia de calor y su configuración. La incubadora neonatal es un sistema cerrado que controla no solo la temperatura, sino también otras variables como la humedad, proporcionando un ambiente aislado. En cambio, la servo-cuna es un sistema abierto que transmite calor principalmente por radiación, lo que permite un acceso más directo al neonato, pero con menor control ambiental. A pesar de estas diferencias, ambos dispositivos cumplen una función esencial en el cuidado neonatal.
+
+# Bibliografía : 
+
+- Black, R. E., Cousens, S., Johnson, H. L., et al. (2010). Global, regional, and national causes of child mortality. The Lancet, 375(9730), 1969–1987. https://doi.org/10.1016/S0140-6736(10)60549-1
+
+- Knobel-Dail, R. B. (2014). Role of effective thermoregulation in premature neonates. Research and Reports in Neonatology, 4, 147–156. https://doi.org/10.2147/RRN.S52377
+
+- Restrepo-Pérez, L., Durango-Londoño, N., Gómez-Suárez, N. E., González-Ramírez, F., & Rivera-Bonilla, N. (2007). Prototipo de incubadora neonatal. Revista Ingeniería Biomédica, 1(1), 55–59. http://www.scielo.org.co/pdf/rinbi/v1n1/v1n1a12.pdf
+
+- Tran, C. G. K., Gibson, A., Wong, D., Tilahun, D., Selock, N., Good, T., & Rao, G. (2014). Designing a low-cost multifunctional infant incubator. Journal of Laboratory Automation, 19(3), 332–337. https://doi.org/10.1177/2211068214530391
+
+- van Leeuwen, M., Frauenfelder, O., Oude-Reimer, M., et al. (2018). European standards of care for newborn health: Temperature management. EFCNI. https://newborn-health-standards.org
+
