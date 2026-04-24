@@ -76,6 +76,9 @@ A continuación, se implementó el sistema de control de temperatura previamente
 
 Posteriormente, se integró el sistema de medición de peso dentro de la estructura del prototipo, incorporando el sensor de fuerza y el sistema de visualización correspondiente. Esto permitió estimar el peso del neonato de manera práctica, simulando una de las funciones esenciales de las incubadoras reales.
 
+<img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/0dc8d79a-6e1f-49ca-b095-7e62c0e131de" />
+
+
 Finalmente, se realizó una estimación del costo total del sistema desarrollado, considerando tanto el valor individual de cada componente como el costo global del prototipo. Asimismo, se efectuó una comparación general con incubadoras comerciales, teniendo en cuenta aspectos como funcionalidad, complejidad y costo.
 
 ## Parte C | Documentación : 
@@ -83,6 +86,9 @@ Finalmente, se realizó una estimación del costo total del sistema desarrollado
 En la última etapa, se documentó todo el proceso desarrollado durante la práctica, describiendo de manera detallada cada uno de los pasos realizados en el diseño, simulación y construcción del sistema. Esta documentación se organizó siguiendo una estructura clara y coherente, facilitando su comprensión.
 
 Adicionalmente, se creó un repositorio en la plataforma GitHub donde se recopiló toda la información del proyecto, incluyendo descripciones, diseños, simulaciones y evidencia del prototipo. Este repositorio permitió mantener un registro ordenado del trabajo realizado y fomentar el trabajo colaborativo entre los integrantes del grupo.
+
+<img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/679aa416-45f0-4c52-8cef-c0bc55272822" />
+
 
 # Marco teórico : 
 
